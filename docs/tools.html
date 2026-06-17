@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLI Security Tools - Ethical Hacker Toolkit</title>
+<meta name="description" content="14 Python CLI security tools for penetration testing. Website scanner, port scanner, SSL checker, DNS lookup, and more. Zero dependencies.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:20px}
+h1{text-align:center;font-size:2rem;color:#00ff88;padding:40px 0 20px}
+h2{color:#00ff88;margin:30px 0 15px;border-bottom:1px solid #222;padding-bottom:10px}
+h3{color:#00ff88;margin:20px 0 10px}
+a{color:#00ff88}
+p{margin:10px 0}
+.back{text-align:center;padding:20px}
+.cta{display:inline-block;background:#00ff88;color:#000;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px 0}
+pre{background:#111;padding:15px;border-radius:6px;border:1px solid #222;margin:10px 0;overflow-x:auto}
+.feature{background:#111;padding:20px;border-radius:8px;border:1px solid #222;margin:15px 0}
+.tool-detail{margin:8px 0;color:#888}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>CLI Security Tools</h1>
+<p style="text-align:center;color:#888;margin-bottom:30px">14 Python scripts for penetration testing and security auditing</p>
+
+<div class="feature">
+<h3>Website Security Checker</h3>
+<p>Scans HTTP security headers (HSTS, CSP, X-Frame-Options, XSS-Protection), detects web technologies, and checks for common misconfigurations.</p>
+<p class="tool-detail">Usage: python3 web-check.py example.com</p>
+<p class="tool-detail">Output: JSON with headers, tech stack, vulnerabilities</p>
+</div>
+
+<div class="feature">
+<h3>Port Scanner</h3>
+<p>Multi-threaded TCP port scanner. Scans 25 common ports including HTTP, HTTPS, SSH, FTP, SMTP, DNS, MySQL, PostgreSQL, and Redis.</p>
+<p class="tool-detail">Usage: python3 port-scan.py 10.0.0.1</p>
+<p class="tool-detail">Output: JSON with open ports and service detection</p>
+</div>
+
+<div class="feature">
+<h3>SSL Certificate Inspector</h3>
+<p>Retrieves and analyzes SSL/TLS certificates. Shows issuer, subject, validity period, SANs, and cipher suite information.</p>
+<p class="tool-detail">Usage: python3 ssl-check.py example.com</p>
+<p class="tool-detail">Output: JSON with full certificate details</p>
+</div>
+
+<div class="feature">
+<h3>DNS Lookup Tool</h3>
+<p>Performs DNS queries for A, AAAA, MX, NS, TXT, CNAME, SOA records. Supports custom DNS servers.</p>
+<p class="tool-detail">Usage: python3 dns-lookup.py example.com</p>
+<p class="tool-detail">Output: JSON with all record types</p>
+</div>
+
+<div class="feature">
+<h3>HTTP Header Inspector</h3>
+<p>Examines HTTP security headers. Checks for HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy.</p>
+<p class="tool-detail">Usage: python3 http-headers.py example.com</p>
+<p class="tool-detail">Output: JSON with header analysis</p>
+</div>
+
+<div class="feature">
+<h3>Subdomain Finder</h3>
+<p>Discovers subdomains using 50+ common patterns. Tests each subdomain for DNS resolution and HTTP response.</p>
+<p class="tool-detail">Usage: python3 sub-find.py example.com</p>
+<p class="tool-detail">Output: JSON with discovered subdomains</p>
+</div>
+
+<div class="feature">
+<h3>Log Analyzer</h3>
+<p>Analyzes web server access logs. Detects SQL injection attempts, XSS attacks, brute force login attempts, and path traversal.</p>
+<p class="tool-detail">Usage: python3 log-analyzer.py access.log</p>
+<p class="tool-detail">Output: JSON with attack patterns found</p>
+</div>
+
+<div class="feature">
+<h3>SSL Cert Watcher</h3>
+<p>Monitors SSL certificate expiry for multiple domains. Shows days remaining, issuer, and warns about upcoming expiration.</p>
+<p class="tool-detail">Usage: python3 cert-watch.py example.com google.com github.com</p>
+<p class="tool-detail">Output: JSON with expiry status per domain</p>
+</div>
+
+<div class="feature">
+<h3>Password Strength Auditor</h3>
+<p>Evaluates password strength based on length, character variety, entropy, and common pattern detection.</p>
+<p class="tool-detail">Usage: python3 pass-audit.py MyP@ssw0rd123</p>
+<p class="tool-detail">Output: JSON with strength score and analysis</p>
+</div>
+
+<div class="feature">
+<h3>File Integrity Monitor</h3>
+<p>Monitors files and directories for changes using SHA-256 hashing. Detects new, modified, and deleted files.</p>
+<p class="tool-detail">Usage: python3 file-monitor.py /path/to/watch</p>
+<p class="tool-detail">Output: JSON with file status changes</p>
+</div>
+
+<div class="feature">
+<h3>WHOIS Domain Lookup</h3>
+<p>Retrieves domain registration information via RDAP. Shows registrar, creation/expiry dates, name servers, and registrant contact.</p>
+<p class="tool-detail">Usage: python3 whois-lookup.py example.com</p>
+<p class="tool-detail">Output: JSON with WHOIS/RDAP data</p>
+</div>
+
+<div class="feature">
+<h3>HTTP Response Benchmarker</h3>
+<p>Benchmarks HTTP response times. Runs configurable requests and reports min, max, average, and standard deviation.</p>
+<p class="tool-detail">Usage: python3 http-bench.py https://example.com</p>
+<p class="tool-detail">Output: JSON with timing statistics</p>
+</div>
+
+<div class="feature">
+<h3>URL Extractor</h3>
+<p>Extracts all URLs from a web page. Parses HTML and finds links, scripts, images, stylesheets, and other resources.</p>
+<p class="tool-detail">Usage: python3 url-extract.py https://example.com</p>
+<p class="tool-detail">Output: JSON with all discovered URLs</p>
+</div>
+
+<div class="feature">
+<h3>File Hash Checker</h3>
+<p>Computes file hashes using MD5, SHA-1, SHA-256, and SHA-512. Supports single files and batch processing.</p>
+<p class="tool-detail">Usage: python3 hash-check.py file.txt</p>
+<p class="tool-detail">Output: JSON with all hash values</p>
+</div>
+
+<div class="back">
+<h2>Get All 14 Tools</h2>
+<p>Bundle price: $19.99 (save $50)</p>
+<a href="/" class="cta">Buy Bundle</a>
+<p style="color:#888;margin-top:10px">USDT (BSC): 0xed7881bc052e497efd44ba49558111e6ff1f36ff</p>
+</div>
+</div>
+</body>
+</html>
