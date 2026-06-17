@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethical Hacker Toolkit - CLI Security Tools</title>
+<meta name="description" content="Professional CLI security auditing tools for penetration testers, bug bounty hunters, and security researchers. Zero dependencies, pure Python 3.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:20px}
+header{text-align:center;padding:60px 0 40px;border-bottom:1px solid #222}
+h1{font-size:2.5rem;color:#00ff88;margin-bottom:10px}
+h2{font-size:1.5rem;color:#00ff88;margin:30px 0 20px;border-bottom:1px solid #222;padding-bottom:10px}
+.tagline{font-size:1.2rem;color:#888;margin-bottom:20px}
+.cta{display:inline-block;background:#00ff88;color:#000;padding:15px 40px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:1.1rem;margin:20px 0;transition:all .3s}
+.cta:hover{background:#00cc6a;transform:translateY(-2px)}
+.cta-secondary{background:transparent;border:2px solid #00ff88;color:#00ff88;margin-left:10px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:30px 0}
+.feature{background:#111;padding:25px;border-radius:8px;border:1px solid #222}
+.feature h3{color:#00ff88;margin-bottom:10px}
+.feature .price{color:#666;font-size:0.9rem}
+.discount{border:1px solid #00ff88;background:#0a1a10}
+.tool-list{margin:20px 0}
+.tool{background:#111;padding:15px 20px;margin:8px 0;border-radius:6px;border:1px solid #222;display:flex;justify-content:space-between;align-items:center}
+.tool-name{font-weight:500}
+.tool-price{color:#00ff88}
+code{background:#1a1a1a;padding:2px 6px;border-radius:3px;font-size:0.9rem;color:#ccc}
+pre{background:#111;padding:15px;border-radius:6px;overflow-x:auto;border:1px solid #222;margin:15px 0}
+.wallet{background:#0a1a10;padding:20px;border-radius:8px;border:2px solid #00ff88;text-align:center;margin:20px 0}
+.wallet pre{font-size:0.9rem;word-break:break-all;background:#000;border-color:#00ff88;color:#00ff88}
+.payment-methods{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0}
+@media(max-width:600px){.payment-methods{grid-template-columns:1fr}}
+.payment-card{background:#111;padding:25px;border-radius:8px;border:1px solid #222;text-align:center}
+.payment-card h3{color:#00ff88;margin-bottom:15px}
+.payment-card .step{color:#888;font-size:0.9rem;margin:8px 0}
+footer{text-align:center;padding:40px 0;color:#555;border-top:1px solid #222;margin-top:40px}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Ethical Hacker Toolkit</h1>
+<p class="tagline">14 Professional CLI Security Tools &mdash; Zero Dependencies, Pure Python 3</p>
+<a href="#buy" class="cta">Buy Bundle $19.99</a>
+<a href="https://bensliman71.gumroad.com" class="cta cta-secondary" target="_blank" rel="noopener">Individual Tools $5</a>
+</header>
+
+<div class="features">
+<div class="feature">
+<h3>Zero Dependencies</h3>
+<p>No pip install, no npm, no Docker. Just Python 3 and these scripts. Works on any OS.</p>
+</div>
+<div class="feature">
+<h3>JSON Output</h3>
+<p>Every tool outputs structured JSON. Pipe into jq, integrate with CI/CD, or parse programmatically.</p>
+</div>
+<div class="feature discount">
+<h3>Bundle Deal</h3>
+<p>Get all 14 tools for <strong>$19.99</strong> &mdash; that's 14 tools for the price of 4 individual ones.</p>
+</div>
+</div>
+
+<h2>Included Tools</h2>
+<div class="tool-list">
+<div class="tool"><span class="tool-name">Website Security Checker</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">Port Scanner (TCP, 25 ports)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">SSL Certificate Inspector</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">DNS Lookup (A, MX, NS, TXT, etc.)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">HTTP Security Header Inspector</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">Subdomain Finder (50+ patterns)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">Log Analyzer (SQLi, XSS, brute force)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">SSL Cert Watcher (multi-domain)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">Password Strength Auditor</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">File Integrity Monitor (SHA-256)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">WHOIS Domain Lookup</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">HTTP Response Benchmarker</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">URL Extractor (web page links)</span><span class="tool-price">$5</span></div>
+<div class="tool"><span class="tool-name">File Hash Checker (MD5/SHA1/256/512)</span><span class="tool-price">$5</span></div>
+<div class="tool" style="border-color:#00ff88;background:#0a1a10"><span class="tool-name"><strong>BUNDLE (All 14 tools)</strong></span><span class="tool-price" style="color:#ff6b6b;font-size:1.2rem"><strong>$19.99</strong></span></div>
+</div>
+
+<h2>Quick Examples</h2>
+<pre>python3 ssl-check.py example.com
+python3 port-scan.py 10.0.0.1
+python3 log-analyzer.py access.log
+python3 cert-watch.py example.com google.com github.com
+python3 pass-audit.py MyP@ssw0rd123</pre>
+
+<h2 id="buy">How to Buy</h2>
+
+<div class="payment-methods">
+<div class="payment-card">
+<h3>Option 1: USDT (BEP-20)</h3>
+<p style="color:#888;margin-bottom:15px">Send USDT to the wallet below. Email tx hash to receive files instantly.</p>
+<p class="step">1. Open your Binance or Trust Wallet app</p>
+<p class="step">2. Send USDT (BEP-20/BSC) to:</p>
+<div class="wallet">
+<p style="margin-bottom:10px;color:#00ff88">Network: BSC (BEP-20)</p>
+<pre>0xed7881bc052e497efd44ba49558111e6ff1f36ff</pre>
+</div>
+<p class="step">3. Email <strong>benslimanmalek329@gmail.com</strong> with transaction hash</p>
+<p class="step">4. Receive download link within 1 hour</p>
+</div>
+<div class="payment-card">
+<h3>Option 2: Binance Pay</h3>
+<p style="color:#888;margin-bottom:15px">Pay directly with your Binance account. No wallet needed.</p>
+<p class="step">1. Click the link below</p>
+<p class="step">2. Log in to Binance</p>
+<p class="step">3. Send $5 USDT</p>
+<p class="step">4. Email <strong>benslimanmalek329@gmail.com</strong> with proof</p>
+<a href="https://s.binance.com/npzZMIWV" class="cta" style="margin:15px 0;display:block">Pay $5 via Binance</a>
+</div>
+</div>
+
+<h2>Who Needs This?</h2>
+<div class="features">
+<div class="feature">
+<h3>Bug Bounty Hunters</h3>
+<p>Fast recon and scanning tools for initial target assessment and vulnerability discovery.</p>
+</div>
+<div class="feature">
+<h3>System Administrators</h3>
+<p>Audit SSL certs, monitor file integrity, analyze logs, and benchmark server performance.</p>
+</div>
+<div class="feature">
+<h3>Security Students</h3>
+<p>Learn security auditing fundamentals with lightweight, readable Python tools.</p>
+</div>
+</div>
+
+<div style="text-align:center;margin:40px 0">
+<p style="color:#888;margin-bottom:10px">Questions? Email <strong>benslimanmalek329@gmail.com</strong></p>
+<a href="#buy" class="cta">Buy Bundle $19.99</a>
+</div>
+
+<footer>
+<p>Built with Python 3 &bull; No dependencies &bull; JSON output</p>
+<p style="margin-top:10px"><a href="https://bensliman71.gumroad.com" style="color:#888">Gumroad Store</a></p>
+</footer>
+</div>
+</body>
+</html>
