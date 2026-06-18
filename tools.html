@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All 21 Tools - Ethical Hacker Toolkit CLI Security Tools</title>
+<meta name="description" content="Complete list of 21 Python CLI security tools: 14 original tools, 5 AI-powered tools, and 2 premium tools. Detailed descriptions and usage examples.">
+<meta name="keywords" content="CLI security tools, Python security scripts, penetration testing tools, bug bounty tools, AI security scanner, port scanner, SSL checker">
+<link rel="canonical" href="https://hamidtlemcenbob.github.io/security-cli-tools/tools.html">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border-bottom:1px solid #222;flex-wrap:wrap;gap:10px}
+nav .logo{color:#00ff88;font-weight:bold;font-size:1.3rem;text-decoration:none}
+nav a{color:#888;text-decoration:none;margin-left:20px;font-size:0.95rem;transition:color .3s}
+nav a:hover{color:#00ff88}
+@media(max-width:600px){nav{justify-content:center;text-align:center}nav a{margin:0 10px}}
+h1{text-align:center;font-size:2rem;color:#00ff88;padding:40px 0 10px}
+h2{color:#00ff88;margin:40px 0 15px;border-bottom:1px solid #222;padding-bottom:10px;font-size:1.4rem}
+h3{color:#00ff88;margin:0 0 8px;font-size:1.1rem}
+.subtitle{text-align:center;color:#888;margin-bottom:30px;font-size:1.05rem}
+.badge{display:inline-block;background:#00ff88;color:#000;font-size:0.65rem;padding:2px 8px;border-radius:10px;font-weight:bold;margin-left:8px;vertical-align:middle}
+.badge-premium{background:#f0b90b;color:#000}
+.tool-detail{background:#111;padding:20px;border-radius:8px;border:1px solid #222;margin:12px 0;transition:border-color .3s}
+.tool-detail:hover{border-color:#00ff88}
+.tool-detail p{color:#999;font-size:0.95rem;margin:5px 0}
+.tool-detail .meta{color:#555;font-size:0.85rem;margin:5px 0}
+.tool-detail .meta code{color:#00ff88;background:#000;padding:2px 6px;border-radius:3px;font-size:0.85rem}
+.cta{display:inline-block;background:#00ff88;color:#000;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:bold;margin:10px 5px;transition:all .3s}
+.cta:hover{background:#00cc6a;transform:translateY(-2px)}
+.cta-buy{background:transparent;border:2px solid #00ff88;color:#00ff88;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;margin:5px;transition:all .3s}
+.cta-buy:hover{background:#00ff88;color:#000}
+footer{text-align:center;padding:40px 0;color:#555;border-top:1px solid #222;margin-top:40px}
+footer a{color:#888;text-decoration:none;margin:0 10px}
+footer a:hover{color:#00ff88}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+<a href="/" class="logo">EHT</a>
+<div>
+<a href="tools.html">Tools</a>
+<a href="how-to-buy.html">How to Buy</a>
+<a href="blog.html">Blog</a>
+<a href="https://bensliman71.gumroad.com" target="_blank" rel="noopener">Gumroad</a>
+</div>
+</nav>
+
+<h1>All 21 CLI Security Tools</h1>
+<p class="subtitle">Detailed descriptions, usage examples, and pricing for every tool</p>
+
+<div style="text-align:center;margin:20px 0">
+<a href="/#buy" class="cta">Buy Complete Bundle $29.99</a>
+<a href="/#buy" class="cta-buy">Individual Tools $5</a>
+</div>
+
+<h2>Original Tools (14) &mdash; $5 each</h2>
+
+<div class="tool-detail">
+<h3>Website Security Checker</h3>
+<p>Scans HTTP security headers including HSTS, CSP, X-Frame-Options, X-Content-Type-Options, and XSS-Protection. Detects web technologies, checks for common misconfigurations, and provides a security score.</p>
+<p class="meta">Usage: <code>python3 web-check.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Port Scanner</h3>
+<p>Multi-threaded TCP port scanner that checks 25 common ports including HTTP (80), HTTPS (443), SSH (22), FTP (21), SMTP (25), DNS (53), MySQL (3306), PostgreSQL (5432), and Redis (6379). Fast parallel scanning with service detection.</p>
+<p class="meta">Usage: <code>python3 port-scan.py 10.0.0.1</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>SSL Certificate Inspector</h3>
+<p>Retrieves and analyzes SSL/TLS certificates. Shows issuer, subject, validity period, Subject Alternative Names (SANs), cipher suite information, and chain validation. Detects expired and misconfigured certificates.</p>
+<p class="meta">Usage: <code>python3 ssl-check.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>DNS Lookup Tool</h3>
+<p>Performs comprehensive DNS queries for A, AAAA, MX, NS, TXT, CNAME, and SOA records. Supports custom DNS servers, reverse DNS lookups, and DNSSEC validation status.</p>
+<p class="meta">Usage: <code>python3 dns-lookup.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>HTTP Security Headers Inspector</h3>
+<p>Examines all HTTP security headers in detail. Checks for HSTS configuration, Content Security Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy. Provides recommendations.</p>
+<p class="meta">Usage: <code>python3 http-headers.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Subdomain Finder</h3>
+<p>Discovers subdomains using a wordlist of 50+ common patterns. Tests each subdomain for DNS resolution and HTTP response. Useful for bug bounty recon and attack surface mapping.</p>
+<p class="meta">Usage: <code>python3 sub-find.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Log Analyzer</h3>
+<p>Analyzes web server access logs to detect malicious activity. Identifies SQL injection attempts, XSS attacks, brute force login attempts, path traversal, and other attack patterns. Color-coded output for quick triage.</p>
+<p class="meta">Usage: <code>python3 log-analyzer.py access.log</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>SSL Cert Watcher</h3>
+<p>Monitors SSL certificate expiry for multiple domains simultaneously. Shows days remaining until expiration, issuer details, and warns when certificates are approaching expiry. Perfect for sysadmins managing multiple sites.</p>
+<p class="meta">Usage: <code>python3 cert-watch.py example.com google.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Password Strength Auditor</h3>
+<p>Evaluates password strength based on multiple criteria: length, character variety (uppercase, lowercase, digits, symbols), entropy calculation, common pattern detection, and dictionary word matching. Returns a numerical score and detailed breakdown.</p>
+<p class="meta">Usage: <code>python3 pass-audit.py MyP@ssw0rd123</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>File Integrity Monitor</h3>
+<p>Monitors files and directories for unauthorized changes using SHA-256 hashing. Detects new, modified, and deleted files. Maintains a baseline database and reports any deviations. Ideal for intrusion detection.</p>
+<p class="meta">Usage: <code>python3 file-monitor.py /path/to/watch</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>WHOIS Domain Lookup</h3>
+<p>Retrieves domain registration information via RDAP protocol. Shows registrar, creation and expiry dates, name servers, and registrant contact details. Supports both domain names and IP addresses.</p>
+<p class="meta">Usage: <code>python3 whois-lookup.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>HTTP Response Benchmarker</h3>
+<p>Benchmarks HTTP response times for websites. Runs configurable number of requests and reports minimum, maximum, average, median, and standard deviation. Useful for performance testing and monitoring.</p>
+<p class="meta">Usage: <code>python3 http-bench.py https://example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>URL Extractor</h3>
+<p>Extracts all URLs from a web page. Parses HTML and discovers links, scripts, images, stylesheets, iframes, and other embedded resources. Useful for web scraping and asset discovery.</p>
+<p class="meta">Usage: <code>python3 url-extract.py https://example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>File Hash Checker</h3>
+<p>Computes file hashes using MD5, SHA-1, SHA-256, and SHA-512 algorithms. Supports single file processing and batch directory scanning. Verifies file integrity against known hash values.</p>
+<p class="meta">Usage: <code>python3 hash-check.py file.txt</code> &bull; Output: JSON</p>
+</div>
+
+<h2>AI-Powered Tools (5) &mdash; $7 each <span class="badge">AI</span></h2>
+
+<div class="tool-detail">
+<h3>AI Pentest Scanner <span class="badge">AI</span></h3>
+<p>AI-driven penetration testing scanner that uses machine learning to identify vulnerabilities. Automatically prioritizes findings based on risk score, suggests exploitation paths, and generates detailed reports with remediation steps.</p>
+<p class="meta">Usage: <code>python3 ai-pentest.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Bug Bounty Recon Scanner <span class="badge">AI</span></h3>
+<p>Automated reconnaissance tool for bug bounty hunting. Performs intelligent subdomain discovery, technology fingerprinting, endpoint enumeration, and vulnerability surface analysis. Prioritizes targets based on potential payout.</p>
+<p class="meta">Usage: <code>python3 bb-recon.py example.com</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Security Toolkit Auditor <span class="badge">AI</span></h3>
+<p>Scans your system for installed security tools and audits your security toolkit collection. Suggests complementary tools, identifies gaps in your security workflow, and recommends upgrades based on your use case.</p>
+<p class="meta">Usage: <code>python3 toolkit-audit.py</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Automation Pack Generator <span class="badge">AI</span></h3>
+<p>Generates custom automation scripts for security workflows. Describe your task in plain English and get a ready-to-use Python script. Supports common patterns like log parsing, report generation, and batch scanning.</p>
+<p class="meta">Usage: <code>python3 auto-gen.py "scan all subdomains for open ports"</code> &bull; Output: Python script</p>
+</div>
+
+<div class="tool-detail">
+<h3>AI Security Prompts <span class="badge">AI</span></h3>
+<p>Curated collection of AI prompts for security analysis and threat modeling. Includes prompts for vulnerability research, exploit development assistance, log analysis, and security architecture review. Works with any LLM.</p>
+<p class="meta">Usage: <code>python3 ai-prompts.py --list</code> &bull; Output: JSON</p>
+</div>
+
+<h2>Premium Tools (2) &mdash; $10 each <span class="badge badge-premium">PREMIUM</span></h2>
+
+<div class="tool-detail">
+<h3>Advanced Port Scanner <span class="badge badge-premium">PREMIUM</span></h3>
+<p>Full-scale TCP and UDP port scanner that scans all 65,535 ports on any target. Features multi-threaded scanning, service fingerprinting (banner grabbing), OS detection, and nmap-compatible output formats. Includes stealth scan modes and custom timing templates.</p>
+<p class="meta">Usage: <code>python3 advanced-scan.py 10.0.0.1</code> &bull; Output: JSON</p>
+</div>
+
+<div class="tool-detail">
+<h3>Network Packet Analyzer <span class="badge badge-premium">PREMIUM</span></h3>
+<p>Real-time packet capture and analysis tool. Captures network traffic, decodes protocols (TCP, UDP, HTTP, DNS, DHCP), and analyzes packets for security threats. Features live capture mode, PCAP file reading, bandwidth monitoring, and traffic statistics.</p>
+<p class="meta">Usage: <code>python3 packet-analyzer.py --interface eth0</code> &bull; Output: JSON</p>
+</div>
+
+<div style="text-align:center;margin:40px 0;padding:30px;background:#111;border-radius:10px;border:2px solid #00ff88">
+<h3 style="font-size:1.5rem">Complete Bundle &mdash; All 21 Tools</h3>
+<p style="color:#888;margin:10px 0">14 original + 5 AI-powered + 2 premium</p>
+<p style="font-size:2rem;font-weight:bold;color:#fff;margin:10px 0"><span style="color:#555;text-decoration:line-through;font-size:1.2rem;font-weight:normal">$109</span> $29.99</p>
+<p style="color:#ff6b6b;font-weight:bold">Save $79 &mdash; Best value</p>
+<a href="/#buy" class="cta" style="margin-top:15px">Buy Complete Bundle $29.99</a>
+<p style="color:#555;font-size:0.85rem;margin-top:10px">USDT (BSC): 0xed7881bc052e497efd44ba49558111e6ff1f36ff</p>
+</div>
+
+<footer>
+<p>Ethical Hacker Toolkit &bull; 21 Python CLI Security Tools</p>
+<p style="margin-top:8px">
+<a href="/">Home</a>
+<a href="how-to-buy.html">How to Buy</a>
+<a href="blog.html">Blog</a>
+<a href="https://bensliman71.gumroad.com" target="_blank" rel="noopener">Gumroad</a>
+</p>
+</footer>
+</div>
+</body>
+</html>
